@@ -8,7 +8,19 @@ const ruta = [
     {
         path:"/about",
         element: "Hola soy About"
-    }
+    },
+    {
+        path:"/contact",
+        element: "Hola soy contac"
+    },
+    {
+        path:"/izquierda",
+        element: "Hola soy borde redondeado a la izquierda"
+    },
+    {
+        path:"/abajo",
+        element: "Hola border redondeado abajo"
+    },
 ]
 
 function Rutas() {

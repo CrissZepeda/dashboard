@@ -32,17 +32,17 @@ function Sidebar() {
                             </Link>
                         </li>
                         <li className="font-semibold py-4 px-10 text-gray-400 hover:bg-purple-700 rounded-t-lg hover:text-white transition-colors">
-                            <Link className="flex items-center gap-4">
+                            <Link to="/contact" className="flex items-center gap-4">
                                 <RiPagesFill/> Contact
                             </Link>
                         </li>
                         <li className="font-semibold py-4 px-10 text-gray-400 hover:bg-purple-700 rounded-s-lg hover:text-white transition-colors">
-                            <Link to="" className="flex items-center gap-4">
+                            <Link to="/izquierda" className="flex items-center gap-4">
                                 <RiArrowLeftFill /> Hover Izquierda
                             </Link>
                         </li>
                         <li className="font-semibold py-4 px-10 text-gray-400 hover:bg-purple-700 rounded-b-lg hover:text-white transition-colors">
-                            <Link to="" className="flex items-center gap-4">
+                            <Link to="/abajo" className="flex items-center gap-4">
                                 <RiArrowDownFill /> Hover Abajo
                             </Link>
                         </li>
