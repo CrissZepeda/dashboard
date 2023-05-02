@@ -1,4 +1,6 @@
 import { useRoutes } from 'react-router-dom'
+import Header from '../component/Header'
+
 
 const ruta = [
     {
@@ -28,7 +30,10 @@ function Rutas() {
     const element = useRoutes(ruta)
 
     return (
-        <div  className="col-span-5">{element}</div>
+        <div className="col-span-5 py-5 px-20 bg-slate-100">
+            <Header />
+            {element}
+        </div>
     )
 }
 
