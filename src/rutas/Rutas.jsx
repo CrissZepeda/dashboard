@@ -1,19 +1,23 @@
 import { useRoutes } from 'react-router-dom'
 import Header from '../component/Header'
+import Home from '../pages/Home/Home'
+import Contact from '../pages/Contact/Contact'
+import About from '../pages/About/About'
+
 
 
 const ruta = [
     {
         path:"/",
-        element: "Hola soy home"
+        element: <Home />
     },
     {
         path:"/about",
-        element: "Hola soy About"
+        element: <About />
     },
     {
         path:"/contact",
-        element: "Hola soy contac"
+        element: <Contact />
     },
     {
         path:"/izquierda",
@@ -30,9 +34,11 @@ function Rutas() {
     const element = useRoutes(ruta)
 
     return (
-        <div className="col-span-5 py-5 px-20 bg-slate-100">
+        <div className="col-span-5 py-5 px-10 bg-gray-200">
             <Header />
-            {element}
+            <div className='flex justify-center w-full bg-white shadow-lg py-14 px-20 rounded-lg font-bold gap-10 my-10'>
+                {element}
+            </div>
         </div>
     )
 }
