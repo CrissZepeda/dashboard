@@ -1,8 +1,8 @@
-import React from 'react'
 
-function Home() {
+function Home(parametros) {
+  const { dir } = parametros
   return (
-    <div className='h-max'>Estoy en la vista home</div>
+    <div className='h-max'>Estoy en la vista {dir}</div>
   )
 }
 

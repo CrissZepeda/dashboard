@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { RiHome3Fill, RiHotelFill, RiPagesFill,RiArrowLeftFill, RiArrowDownFill, RiMenu5Fill, RiMenuFoldFill, RiCloseLine, RiNotification2Fill, RiLogoutBoxLine, RiNotification3Line } from "react-icons/ri";
+import { RiHome3Fill, RiHotelFill, RiPagesFill,RiArrowLeftFill, RiArrowDownFill, RiMenu5Fill, 
+    RiMenuFoldFill, RiCloseLine, RiNotification2Fill, RiLogoutBoxLine, RiNotification3Line,
+    RiCheckboxBlankCircleFill
+} from "react-icons/ri";
 import imgSideBar from "../assets/img/imgSideBar.svg"
 
 function Sidebar() {
@@ -27,7 +30,10 @@ function Sidebar() {
                 
                     {/* <button className=" bg-purple-600 py-2 px-5 lg:px-10 sm:text-sm rounded-lg text-white text-center shadow-xl hover:bg-purple-500 active:bg-purple-600 ">Cerrar sesión</button> */}
                 <div className="md:hidden w-full flex text-lg gap-10 justify-center my-5 items-center">
-                    <div className="text-2xl text-gray-400 items-center"><RiNotification3Line /></div>
+                    <div className="relative text-3xl text-gray-400 items-center">
+                        <RiNotification3Line />
+                        <RiCheckboxBlankCircleFill className="absolute text-red-400 text-sm top-1 right-0 border-none outline-none bg-white" />
+                    </div>
                     <label htmlFor="" className="text-gray-400">Cristhian Zepeda</label>
                     <button ><RiLogoutBoxLine className="text-purple-600 text-2xl font-extrabold hover:text-purple-500 active:text-purple-600"/></button>
                 </div>
