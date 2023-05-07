@@ -12,7 +12,7 @@ import ComponentDirtRuta from '../helpers/ComponentDirtRuta'
 const ruta = [
     {
         path:"/",
-        element: <Home dir={["Home", "Algo"]}/>
+        element: <Home />
     },
     {
         path:"/about",
@@ -42,7 +42,6 @@ function Rutas() {
             <Header />
             <Breadcumbs dir={dir}/>
             <div className='flex justify-center w-full bg-white shadow-lg py-14 px-20 rounded-lg font-bold gap-10 my-2'>
-                {/* {console.log(element.props.match.route.element.props.dir)} */}
                 {element}
             </div>
         </div>
