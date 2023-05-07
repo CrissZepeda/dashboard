@@ -6,7 +6,7 @@ function Breadcumbs(rutaBreadcumbs) {
     
     if(dir == ""){
         return (
-            <div className="flex gap-5 items-center py-5 px-10 text-violet-400">
+            <div className="flex gap-2 lg:gap-5 items-center py-5 px-10 text-violet-400">
             </div>
         )
     }else{
@@ -18,7 +18,7 @@ function Breadcumbs(rutaBreadcumbs) {
         ));
     
         return (
-            <div className="flex gap-5 items-center py-5 px-10 text-violet-400">
+            <div className="flex gap-2 lg:gap-5 items-center py-5 px-10 text-violet-400">
                 <RiHome4Line />       
                 {breadCumbs}
             </div>

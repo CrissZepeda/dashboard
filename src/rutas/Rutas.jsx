@@ -9,6 +9,25 @@ import ComponentDirtRuta from '../helpers/ComponentDirtRuta'
 
 
 
+const rutas = [
+    {
+        path:"/",
+        element: "Home",
+    },
+    {
+        path:"/about",
+        element: "About",
+        bread:"About"
+    },
+    {
+        path:"/contact",
+        element: "Contact",
+        brad:"Contacto"
+    },
+]
+
+
+
 const ruta = [
     {
         path:"/",
@@ -22,14 +41,14 @@ const ruta = [
         path:"/contact",
         element: <Contact dir={["Contacto"]}/>
     },
-    {
+    /* {
         path:"/izquierda",
         element: "Hola soy borde redondeado a la izquierda"
     },
     {
         path:"/abajo",
         element: "Hola border redondeado abajo"
-    },
+    }, */
 ]
 
 function Rutas() {

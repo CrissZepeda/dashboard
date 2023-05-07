@@ -55,7 +55,7 @@ function Sidebar() {
                                 <RiPagesFill/> Contact
                             </Link>
                         </li>
-                        <li className="font-semibold py-4 sm:px-1 px-10 text-gray-400 hover:bg-purple-700 rounded-lg hover:text-white transition-colors">
+                        {/* <li className="font-semibold py-4 sm:px-1 px-10 text-gray-400 hover:bg-purple-700 rounded-lg hover:text-white transition-colors">
                             <Link to="/izquierda" className="flex items-center gap-4 mx-5" onClick={collapse}>
                                 <RiArrowLeftFill /> Hover Izquierda
                             </Link>
@@ -64,7 +64,7 @@ function Sidebar() {
                             <Link to="/abajo" className="flex items-center gap-4 mx-5" onClick={collapse}>
                                 <RiArrowDownFill /> Hover Abajo
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
                 <img className="my-20" src={imgSideBar} alt="" />
